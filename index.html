@@ -308,8 +308,10 @@
       <a href="#home">About Us</a>
       <a href="#services">Services</a>
       <a href="#games">Games</a>
+      <!-- DISABLED: Partners & Reviews
       <a href="#partners">Partners</a>
       <a href="#reviews">Reviews</a>
+      -->
     </nav>
     <a href="#contact" class="btn nav-cta">Get in touch</a>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
@@ -320,8 +322,10 @@
     <a href="#home">About Us</a>
     <a href="#services">Services</a>
     <a href="#games">Games</a>
+    <!-- DISABLED: Partners & Reviews
     <a href="#partners">Partners</a>
     <a href="#reviews">Reviews</a>
+    -->
     <a href="#contact" class="btn" style="margin-top:8px">Get in touch</a>
   </div>
 </header>
@@ -341,7 +345,7 @@
   </div>
   <div class="stats">
     <div class="stat"><div class="n" id="totalPlays">3.0M+</div><div class="l">Total Play Sessions</div></div>
-    <div class="stat"><div class="n">20K+</div><div class="l">Total Members</div></div>
+    <!--div class="stat"><div class="n">20K+</div><div class="l">Total Members</div></div> -->
     <div class="stat"><div class="n" id="totalGames">8</div><div class="l">Total Games</div></div>
   </div>
 </section>
@@ -394,7 +398,7 @@
   </div>
 </section>
 
-<!-- PARTNERS -->
+<!-- PARTNERS — DISABLED (remove the wrapping comment markers to re-enable)
 <section id="partners">
   <div class="wrap">
     <div class="eyebrow"><span class="mono">Trusted by</span></div>
@@ -407,8 +411,9 @@
     </div>
   </div>
 </section>
+-->
 
-<!-- REVIEWS -->
+<!-- REVIEWS — DISABLED (remove the wrapping comment markers to re-enable)
 <section id="reviews" style="background:linear-gradient(180deg,transparent,var(--bg-2),transparent)">
   <div class="wrap">
     <div class="eyebrow"><span class="mono">Testimonials</span></div>
@@ -444,6 +449,7 @@
     </div>
   </div>
 </section>
+-->
 
 <!-- CONTACT -->
 <section id="contact">
@@ -536,10 +542,10 @@
     {n:"Mage Tower Defense", plays:"1.7K Plays", role:"Manager", img:"Assets/mageTD.png",
      desc:"Managed the project's redevelopment, overseeing development coordination, feature planning, and ongoing live operations.",
      url:"https://www.roblox.com/games/92923167709043/Mage-Tower-Defense"},
-    {n:"RISE OF VILTRUM", plays:"1.2M Plays", role:"UI Designer", img:"Assets/RiseOfViltrum.png",
+    {n:"RISE OF VILTRUM", plays:"1.3M Plays", role:"UI Designer", img:"Assets/RiseOfViltrum.png",
      desc:"Contributed to the development of several user interface elements, including the Skill Tree, ensuring they were functional, intuitive, and aligned with the game’s overall design.",
      url:"https://www.roblox.com/games/99058397196974/RISE-OF-VILTRUM"},
-    {n:"Hallowed Earth", plays:"196.4K Plays", role:"UI Designer", img:"Assets/hallowedearthofficial.png",
+    {n:"Hallowed Earth", plays:"206.4K Plays", role:"UI Designer", img:"Assets/hallowedearthofficial.png",
      desc:"Designed and implemented the in-game UI — menus and HUD.",
      url:"https://www.roblox.com/games/71883129193014/Hallowed-Earth-Dinosaur-Survival"},
     {n:"Anime Speed Clicker", plays:"1.9M Plays", role:"Programmer", img:"Assets/animespeedclicker.png",
@@ -564,12 +570,27 @@
      private:true,
      privateReason:"Privated due to copyright issues",
      url:"https://www.roblox.com/games/71463030387257/World-Cup-Manager"},
-    {n:"Soccer Manager", plays:"2M Plays", role:"Producer", img:"Assets/soccermanager.png",
+    {n:"Soccer Manager", plays:"2.4M Plays", role:"Producer", img:"Assets/soccermanager.png",
      desc:"<span style='color:#0f9d8c;font-weight:700'>The relaunch of World Cup Manager.</span> Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
      url:"https://www.roblox.com/games/83988958116126/Soccer-Manager"},
     {n:"Crimson Manor", plays:"5.3K Plays", role:"Programmer", img:"Assets/crimsonmanor.png",
      desc:"We were responsible for programming the game’s core systems, including gameplay mechanics, user interface functionality, pet and combat systems. Additionally, we implemented all UI assets and worked closely with the team to polish and enhance the overall player experience.",
      url:"https://www.roblox.com/games/80927482156208/Crimson-Manor"},
+    {n:"Web swing for Lucky Blocks", plays:"8.2M Plays", role:"Producer", img:"Assets/webswing.png",
+     desc:"Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
+     url:"https://www.roblox.com/games/86455914125987/Web-Swing-for-Lucky-Blocks"},
+    {n:"Hospital Keyboard Escape", plays:"7.6M Plays", role:"Producer", img:"Assets/hospitalkeyboard.png",
+     desc:"Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
+     url:"https://www.roblox.com/games/75561686090072/Hospital-Keyboard-Escape"},
+    {n:"Pray for Brainrot", plays:"724.4K Plays", role:"Producer", img:"Assets/prayforbrainrot.png",
+     desc:"Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
+     url:"https://www.roblox.com/games/97641115295026/Pray-For-Brainrots"},
+    {n:"My Delivery Empire", plays:"52K Plays", role:"Producer", img:"Assets/mydeliveryempire.png",
+     desc:"Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
+     url:"https://www.roblox.com/games/126402054720864/My-Delivery-Empire"},
+    {n:"My Bobo Farm", plays:"19.6K Plays", role:"Producer", img:"Assets/bobofarm.png",
+     desc:"Responsible for owning the project's vision, budget, and overall success while leading production, coordinating development, and overseeing live operations.",
+     url:"https://www.roblox.com/games/108656902173825/My-Bobo-Farm"},
   ];
 
   // Sort games by play count, highest to lowest.
@@ -616,7 +637,8 @@
   }
   games.forEach((g,i)=>{
     const a = document.createElement('a');
-    a.href = g.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    // A game with no url yet renders as a normal card that just isn't clickable.
+    if(g.url){ a.href = g.url; a.target = "_blank"; a.rel = "noopener noreferrer"; }
     a.className = 'game' + (i>=SHOWN ? ' hidden' : '');
     a.innerHTML = `
       <div class="thumb-wrap">
@@ -626,7 +648,7 @@
           <span class="role-badge"><i class="fas ${iconFor(g.role)}"></i>${g.role}</span>
           <p class="role-desc">${g.desc || ''}</p>
           ${g.private ? `<span class="role-private"><i class="fas fa-lock"></i>${g.privateReason || 'Privated Game'}</span>` : ''}
-          <span class="role-hint">Tap again to open →</span>
+          ${g.url ? `<span class="role-hint">Tap again to open →</span>` : ''}
         </div>
       </div>
       <div class="body">
@@ -678,6 +700,8 @@
   });
 
  // ---- PARTNERS MARQUEE (edit names + image files; duplicated for seamless loop) ----
+  // NOTE: the Partners section is currently disabled in the HTML above, so #track
+  // does not exist and everything below is skipped. Re-enable the section to restore it.
   // Put each partner's logo in the Assets folder and update "img" + "n" (alt text).
   const partners = [
     {n:"Beerded Games Studio",   img:"Assets/beerdedgames.png"},
@@ -686,11 +710,13 @@
     {n:"Table Flip Studios", img:"Assets/TableFlipStudios.png"},
   ];
   const track = document.getElementById('track');
-  const set = partners.map(p=>
-    `<div class="logo"><img src="${p.img}" alt="${p.n}"
-       onerror="this.parentNode.style.display='none'"><span class="tip">${p.n}</span></div>`
-  ).join('');
-  track.innerHTML = set + set;
+  if(track){
+    const set = partners.map(p=>
+      `<div class="logo"><img src="${p.img}" alt="${p.n}"
+         onerror="this.parentNode.style.display='none'"><span class="tip">${p.n}</span></div>`
+    ).join('');
+    track.innerHTML = set + set;
+  }
 
   // Handle temporary 3-second visibility on hover or click without stopping the track
   document.querySelectorAll('.logo').forEach(logo => {
